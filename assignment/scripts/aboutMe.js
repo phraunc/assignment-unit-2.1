@@ -28,7 +28,7 @@ let food = 'pizza';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = 2;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 0;
+let friendsPets = 2;
 // 11 - Add two pets to your `pets` variable
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
@@ -44,6 +44,7 @@ else{console.log('How about we stay home?')};
 if (luckyNumber == 2 && adventurous == true) {
     console.log('Roll the dice.')}
     else{console.log('Not today.')};
+    
 // 15 - Write a conditional that console logs "I can have more pets!" 
 //if the value of `pets` is less than the value of `allowedPets`,
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
@@ -64,13 +65,11 @@ let mostPets = pets && friendsPets;
 
 if (pets > friendsPets) {
     console.log('Then pets has most pets!')
-} else{console.log('Then friendPets has most pets!')};
+} else if( friendsPets == pets){
+    console.log('Same, same.')
+} else {console.log('friendsPets has most pets!')}
 
 console.log(mostPets); 
-
-    
-
-
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
@@ -78,6 +77,24 @@ console.log(mostPets);
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
+
+luckyNumber = 7;
+
+switch (luckyNumber)
+{
+case 1:
+console.log('First is the worst');
+break;
+case 2:
+console.log ('Second is the best');
+break;
+case 3:
+console.log ('Third is the one with the polka dot dress');
+break;
+default:
+console.log('Luck is what happens when preparation meets opportunity');
+
+}
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
